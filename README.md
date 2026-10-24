@@ -7,7 +7,7 @@ that was actually generated, and measures how accurate the forecasts were.
 Scope: GB national wind, Elexon data only, purchase decisions made in January 2026
 (delivery days 2 Jan – 1 Feb 2026).
 
-**Live app:** _add the Vercel URL here_
+**Live app:** https://gb-wind-forecast.vercel.app
 
 ## 🚀 Tech Stack
 

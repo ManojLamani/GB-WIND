@@ -1,0 +1,16 @@
+{
+  "source": "https://data.elexon.co.uk/bmrs/api/v1",
+  "fetched_at": "2026-10-24T01:09:57Z",
+  "forecasts": {
+    "dataset": "WINDFOR",
+    "publish_days": "2025-12-30 .. 2026-02-01",
+    "forecast_count": 272,
+    "rows": 19856
+  },
+  "actuals": {
+    "dataset": "FUELHH (fuelType=WIND)",
+    "settlement_days": "2026-01-01 .. 2026-02-02",
+    "rows": 1584
+  },
+  "validation_warnings": []
+}

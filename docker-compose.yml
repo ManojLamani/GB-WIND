@@ -1,0 +1,18 @@
+# docker compose up --build   ->  app on http://localhost:8080, API on http://localhost:8000
+# Host ports can be changed with FRONTEND_PORT / BACKEND_PORT (see .env.example).
+services:
+  backend:
+    build: ./backend
+    env_file:
+      - path: .env
+        required: false
+    ports:
+      - "${BACKEND_PORT:-8000}:8000"
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "${FRONTEND_PORT:-8080}:80"
+    depends_on:
+      backend:
+        condition: service_healthy

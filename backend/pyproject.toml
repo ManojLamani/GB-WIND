@@ -1,0 +1,7 @@
+# pytest settings only. Dependencies live in requirements.txt (runtime)
+# and requirements-dev.txt (tests, offline data fetch).
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+# Starlette's TestClient now suggests the httpx2 package; we deliberately stay on httpx.
+filterwarnings = ["ignore:Using `httpx` with `starlette.testclient` is deprecated"]

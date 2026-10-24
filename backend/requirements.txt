@@ -1,0 +1,5 @@
+# Runtime dependencies (Docker, local server and the Vercel function).
+fastapi==0.161.1
+pydantic==2.14.1
+tzdata==2026.5
+uvicorn==0.54.0

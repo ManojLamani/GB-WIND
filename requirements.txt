@@ -1,3 +1,6 @@
 # Read by Vercel when building the Python function in /api.
-# The single source of truth for runtime dependencies is backend/requirements.txt.
--r backend/requirements.txt
+# Vercel cannot follow "-r" includes, so the runtime packages are listed here directly.
+# Keep these pins the same as backend/requirements.txt (uvicorn is not needed on Vercel).
+fastapi==0.161.1
+pydantic==2.14.1
+tzdata==2026.5

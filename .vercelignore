@@ -1,0 +1,9 @@
+# Keep uploads small: Vercel installs dependencies and builds remotely.
+**/.venv
+**/node_modules
+**/__pycache__
+**/.pytest_cache
+frontend/dist
+backend/tests
+.env
+.env.*
